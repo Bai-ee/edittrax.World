@@ -1,0 +1,376 @@
+{
+  "rosettaVersion": "4.60",
+  "fofVersion": "4.1.0",
+  "companyId": 80142,
+  "subdirectory": "68125D_BR_Cuisine",
+  "borderZIndex": 600,
+  "platform": {
+    "direct": true,
+    "bolt": false,
+    "mojo": {
+      "richMedia": false,
+      "standardAnimatedBanner": false,
+      "cobalt": false
+    }
+  },
+  "vars": {
+    "fg_img": {
+      "defaultValue": "fg_img.png",
+      "required": false
+    },
+    "fg_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "style_img": {
+      "defaultValue": "style_img.png",
+      "required": false
+    },
+    "style_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_vertical_text_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "headline_vertical_text_bg_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_vertical_text": {
+      "defaultValue": "when it’s just been one of those weeks... on a tuesday",
+      "required": true
+    },
+    "cta_text_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "cta_text_bg_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "cta_text": {
+      "defaultValue": "get the app now",
+      "required": true
+    },
+    "logo_img": {
+      "defaultValue": "logo_img.png",
+      "required": true
+    },
+    "logo_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "lifestyle_img": {
+      "defaultValue": "lifestyle_img.png",
+      "required": true
+    },
+    "lifestyle_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_bg_img1": {
+      "defaultValue": "headline_text_bg_img1.png",
+      "required": false
+    },
+    "headline_text_bg_img1_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_bg_img2": {
+      "defaultValue": "headline_text_bg_img2.png",
+      "required": false
+    },
+    "headline_text_bg_img2_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_bg_img3": {
+      "defaultValue": "headline_text_bg_img3.png",
+      "required": false
+    },
+    "headline_text_bg_img3_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_bg_img4": {
+      "defaultValue": "headline_text_bg_img4.png",
+      "required": false
+    },
+    "headline_text_bg_img4_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "cta_text_bg_img1": {
+      "defaultValue": "cta_text_bg_img1.png",
+      "required": false
+    },
+    "cta_text_bg_img1_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "default_img": {
+      "defaultValue": "default_img.png",
+      "required": false
+    },
+    "default_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "bg_img": {
+      "defaultValue": "bg_img.png",
+      "required": false
+    },
+    "bg_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "bg_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "bg_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    },
+    "logo2_img": {
+      "defaultValue": "logo2_img.png",
+      "required": true
+    },
+    "logo2_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "cta_text_bg_img2": {
+      "defaultValue": "cta_text_bg_img2.png",
+      "required": false
+    },
+    "cta_text_bg_img2_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "cta_text_bg_img3": {
+      "defaultValue": "cta_text_bg_img3.png",
+      "required": false
+    },
+    "cta_text_bg_img3_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_horizontal_text_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "headline_horizontal_text_bg_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_horizontal_text": {
+      "defaultValue": "when it’s just been one of those weeks... on a tuesday  ",
+      "required": true
+    },
+    "headline_text_bg_img5": {
+      "defaultValue": "headline_text_bg_img5.png",
+      "required": false
+    },
+    "headline_text_bg_img5_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_bg_img6": {
+      "defaultValue": "headline_text_bg_img6.png",
+      "required": false
+    },
+    "headline_text_bg_img6_tint": {
+      "defaultValue": "",
+      "required": false
+    }
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "height": 480
+    },
+    {
+      "width": 300,
+      "height": 600
+    },
+    {
+      "width": 160,
+      "height": 600
+    },
+    {
+      "width": 300,
+      "height": 250
+    },
+    {
+      "width": 180,
+      "height": 150
+    },
+    {
+      "width": 728,
+      "height": 90
+    },
+    {
+      "width": 468,
+      "height": 60
+    },
+    {
+      "width": 320,
+      "height": 50
+    },
+    {
+      "width": 300,
+      "height": 1050
+    },
+    {
+      "width": 336,
+      "height": 280
+    },
+    {
+      "width": 970,
+      "height": 90
+    },
+    {
+      "width": 970,
+      "height": 250
+    },
+    {
+      "width": 800,
+      "height": 250
+    },
+    {
+      "width": 320,
+      "height": 100
+    }
+  ],
+  "packs": {
+    "320x480": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "300x600": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "160x600": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "300x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "180x150": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "728x90": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "468x60": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "320x50": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "300x1050": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "336x280": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "970x90": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "970x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "800x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ],
+    "320x100": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack"
+    ]
+  }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">
+        (function (d) {
+            var setDefault = false, defaultDomain = "dotomi.com";
+            if (d) {
+                if (d.indexOf("www.") > -1) { d = d.substring(4);}
+                if (d.indexOf(".") > -1) {
+                    while (d.indexOf(".") !== d.lastIndexOf(".")) {
+                        d = d.substring(d.indexOf(".") + 1);
+                    }
+                    if (d.length < 3) {setDefault = true;}
+                } else {setDefault = true;}
+            } else { setDefault = true;}
+            if (setDefault === true) { d = defaultDomain;}
+            try { document.domain = d;} catch (e) {}
+        })(location.hostname);
+
+
+        var CNVR = (function () {
+            var bannerID = gup("bannerID");
+            if (bannerID === ""){
+                bannerID = gup("id");
+            }
+            function gup(name) {
+                name = name.replace(/[[]/, "\[").replace(/[]]/, "\]");
+                var regexS = "[\?&]" + name + "=([^&#]*)";
+                var regex = new RegExp(regexS);
+                var results = regex.exec(window.location.href);
+                if (results === null) {
+                    return "";
+                } else {
+                    return results[1];
+                }
+            }
+
+            var obj = {};
+            var found = false;
+            if (bannerID.indexOf("x") > -1) {
+                var arr = bannerID.split("x");
+                if (arr.length > 1) {
+                    obj.w = arr[0];
+                    obj.h = arr[1];
+                    obj.id = bannerID;
+                    found = true;
+                }
+            }
+            if (found === false) {
+                obj = {w: 0, h: 0, id: null}
+            }
+            return obj;
+        })();
+        CNVR.flashVars = "";
+        CNVR.flashVars = (function () {
+			var arr = [];
+			var loc = location.href;
+			if (loc.indexOf("cfs") > -1 || loc.indexOf("opslocal") >-1){
+				loc = loc.substring(0, loc.lastIndexOf("/"));
+				arr.push({name: "company_id", value: loc});
+			}
+			arr.push({name:"force_retina", value:"false&320x480=true&320x50=true"});
+			arr.push({name:"base_url", value:""});
+			arr.push({name:"badge_bg_color", value:"#000000"});
+			arr.push({name:"badge_text", value:"<b>PLUS EARN UP TO 10% BACK IN REWARDS"});
+			arr.push({name:"badge_text_color", value:"#ffffff"});
+			arr.push({name:"badge_text_padding", value:""});
+			arr.push({name:"bg_color", value:"#ffffff"});
+			arr.push({name:"bg_img", value:"bg_img.png"});
+			arr.push({name:"bg_img_tint", value:""});
+			// arr.push({name:"card_large_img", value:"card_large_img.png"});
+			arr.push({name:"card_large_img_tint", value:""});
+			arr.push({name:"card_small_img", value:"card_small_img.png"});
+			arr.push({name:"card_small_img_tint", value:""});
+			arr.push({name:"company_id", value:"1001"});
+			arr.push({name:"cta_text", value:"<b>LEARN MORE"});
+			arr.push({name:"cta_text_color", value:"#ffffff"});
+			arr.push({name:"cta_text_padding", value:"8px 10px 8px 10px"});
+			arr.push({name:"details_text", value:"*SUBJECT TO CREDIT APPROVAL. CLICK FOR DETAILS."});
+			arr.push({name:"details_text_color", value:"#000000"});
+			arr.push({name:"details_text_padding", value:""});
+			arr.push({name:"fg_img", value:"fg_img.png"});
+			arr.push({name:"fg_img_tint", value:""});
+			arr.push({name:"frame_bg_color", value:"#ffffff"});
+			arr.push({name:"frame_img", value:"frame_img.png"});
+			arr.push({name:"frame_img_tint", value:""});
+			arr.push({name:"headline_text", value:"<b>Earn up to 10% back in rewards*"});
+			arr.push({name:"headline_text_color", value:"#000000"});
+			arr.push({name:"headline_text_padding", value:""});
+			arr.push({name:"lifestyle_img", value:"lifestyle_img.png"});
+			arr.push({name:"lifestyle_img_tint", value:""});
+			arr.push({name:"line_color", value:"#000000"});
+			arr.push({name:"logo_bg_color", value:"#ffffff"});
+			arr.push({name:"logo_img", value:"logo_img.png"});
+			arr.push({name:"logo_img_tint", value:""});
+			arr.push({name:"overlay_color", value:"rgba(255,255,255,0.95)"});
+			arr.push({name:"promo_style_img", value:"promo_style_img.png"});
+			arr.push({name:"promo_style_img_tint", value:""});
+			arr.push({name:"replay_img", value:"replay_img.png"});
+			arr.push({name:"replay_img_tint", value:""});
+			arr.push({name:"style_img", value:"style_img.png"});
+			arr.push({name:"style_img_tint", value:""});
+			// arr.push({name:"subhead_text", value:"when you open a  RUNWAYREWARDS Credit Card"});
+			arr.push({name:"subhead_text_color", value:"#000000"});
+			arr.push({name:"subhead_text_padding", value:""});
+            arr.push({name: "badge_bg_color", value: '#000000'});
+            
+            arr.push({name: "badge_bg_color", value: '#000000'});
+            arr.push({name: "badge_text", value: 'We are proud to support National Geographic and its mission to inspire kids to care about the planet!'});
+            arr.push({name: "badge_text_color", value: '#FFFFFF'});
+            arr.push({name: "cta_text", value: 'We are proud to support National Geographic and its mission to inspire kids to care about the planet!'});
+            arr.push({name: "cta_text_bg_color", value: '#000000'});
+            arr.push({name: "cta_text_color", value: '#FFFFFF'});
+            arr.push({name: "details_text", value: 'We are proud to support National Geographic and its mission to inspire kids to care about the planet!'});
+            arr.push({name: "frame_img", value: 'frame_img.png'});
+            arr.push({name: "headline_text", value: 'We are proud to support National Geographic and its mission to inspire kids to care about the planet!'});
+            arr.push({name: "lifestyle_img", value: 'lifestyle_img.png'});
+            arr.push({name: "logo_img", value: 'logo_talbots_20181102.png'});
+            arr.push({name: "replay_img", value: 'replay_img.png'});
+            arr.push({name: "subhead_text", value: ''});
+            
+            
+            arr.push({name: "legal_text", value: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium, metus ac viverra consequat, sem eros viverra dui, a ornare quam enim vel lacus. Cras elit nibh, tincidunt a laoreet vel, vestibulum sit amet ante. Ut luctus tristique erat at eleifend. Donec tincidunt lorem vitae metus pretium, vel dignissim mi euismod. Curabitur eget mi congue, gravida enim eu, faucibus odio. Praesent et dignissim turpis, ut pulvinar magna. Pellentesque egestas a nulla dapibus semper. Praesent a erat vitae lacus volutpat lacinia. Quisque nec congue libero.
+
+Ut lobortis posuere sem, quis mattis velit accumsan a. Maecenas eu velit pretium, ultricies erat a, vulputate velit. Cras pharetra quam sit amet magna sodales hendrerit. Aliquam finibus felis velit, ac ultrices arcu aliquet ac. Maecenas molestie placerat neque, et molestie sem elementum id. Cras at odio tortor. Donec in diam sed ante molestie congue. Sed consectetur mauris semper sagittis tincidunt. In id lectus laoreet, tempus purus non, faucibus lacus. Fusce id luctus nibh. Aenean eu libero efficitur, vehicula tellus sit amet, viverra orci. Nulla aliquet quis sapien at egestas. Integer eleifend risus sit amet ligula faucibus ultrices. Etiam laoreet, leo vel rhoncus facilisis, orci ipsum dictum est, id ullamcorper nibh augue ut lacus. Vestibulum ut commodo ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Curabitur in cursus nisi. Aenean eleifend eros lectus. Praesent volutpat vel ligula a congue. Integer nibh nisl, porta at gravida at, placerat quis purus. Praesent convallis porttitor lorem. Nunc et quam nibh. Pellentesque non luctus nibh, eu tempor lorem. Nam nec vulputate nisl, vitae consectetur nibh. Aliquam porttitor laoreet viverra. Phasellus quis quam risus. Phasellus sit amet eros finibus felis elementum porta. Suspendisse potenti. Etiam at vulputate velit. Morbi at erat eget turpis posuere tincidunt.
+
+Maecenas id placerat mauris. Aliquam varius placerat aliquam. Nullam tristique tempus purus quis viverra. In ut lectus ultricies, consectetur risus porttitor, efficitur enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Sed venenatis aliquam quam vulputate placerat. Proin ornare volutpat magna fermentum cursus. Donec pretium eros ut neque cursus, vitae mattis diam dignissim. Pellentesque tortor mauris, vehicula a felis ac, dictum ultrices felis. Praesent molestie elit id dui molestie hendrerit. Donec porttitor eu lectus ut posuere.
+
+Ut aliquam nisi odio, sollicitudin pretium lectus feugiat quis. Quisque aliquam volutpat eros vitae varius. Aenean vehicula lacus et fermentum rutrum. Vestibulum sagittis tempus auctor. Fusce cursus sed leo nec iaculis. Donec vel egestas magna. Nullam ultrices lacus et arcu commodo tincidunt. Mauris sit amet posuere nisi. Etiam maximus sed leo vel elementum.
+
+Sed sem sem, dapibus eu nulla quis, luctus placerat arcu. Nam at justo faucibus, pretium velit quis, aliquam est. Vivamus semper consequat faucibus. In congue at nisl sed consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vestibulum ut massa commodo vestibulum. Integer vulputate turpis ac turpis sodales, in rhoncus turpis ultrices. Phasellus condimentum tempor lectus, nec tristique odio volutpat nec. Ut in nulla cursus, rhoncus diam vitae, accumsan ex.
+
+Donec pharetra ante eu elit tincidunt, at tristique nunc sodales. Etiam ac orci et velit dapibus dignissim. Sed varius ligula lacus, ut bibendum diam pretium a. Morbi sit amet tempus est. Cras lobortis, leo eget accumsan sollicitudin, elit elit fringilla purus, ac facilisis nulla est laoreet nisi. Duis risus leo, vestibulum et congue viverra, rhoncus et turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper, ante eget consectetur laoreet, turpis leo placerat ex, nec dignissim libero ante nec velit.
+
+Morbi at ligula congue, accumsan est id, imperdiet tortor. Ut sed rutrum neque. Etiam nec ante condimentum, iaculis dui vel, viverra justo. Vivamus suscipit mollis ipsum quis eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In pulvinar consequat ante ut imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean lacinia urna sapien, at malesuada lacus porta quis. Donec quis eros malesuada, fermentum justo eu, tincidunt lacus. Donec interdum, justo sed dapibus tempor, orci turpis rhoncus dolor, at eleifend urna sapien sed enim. Proin in ante in eros efficitur imperdiet. Pellentesque malesuada enim neque, vitae commodo eros accumsan a. Vivamus a lectus nec dui porta pretium. Proin ultricies eleifend quam non tempor.
+
+Donec elit sem, fringilla id velit vel, pharetra lobortis nibh. Curabitur in purus purus. Donec vitae diam non massa placerat bibendum. Ut malesuada, urna eget tincidunt tristique, mauris ligula tristique sem, at dapibus justo nisi in odio. In hac habitasse platea dictumst. Mauris massa quam, tempus ac justo vitae, vulputate cursus turpis. Phasellus semper eros sit amet mauris volutpat auctor. Maecenas a risus felis. Mauris porta ex eget finibus tincidunt. Aenean sed lacus vitae tortor feugiat euismod at quis arcu. Phasellus est orci, mollis ac sem sed, mollis varius dolor. Vivamus dignissim leo sed ipsum elementum posuere.
+
+Donec ullamcorper sem eget erat fringilla, non malesuada dolor dapibus. Etiam metus arcu, elementum ac consequat at, facilisis vitae justo. Maecenas sodales placerat nunc sed cursus. Donec sollicitudin faucibus tristique. Maecenas laoreet, tortor eu pretium pellentesque, nibh eros tempus lorem, sit amet aliquam nunc massa id urna. Morbi vel eleifend nunc. Nulla dolor neque, auctor et cursus luctus, consequat eu mauris. Fusce luctus, ipsum sit amet vehicula egestas, dui tellus feugiat felis, vitae auctor ligula lectus euismod lacus. Vivamus varius purus eu ex convallis, a vestibulum urna pulvinar. In vestibulum rutrum tincidunt. Aliquam dictum, mauris congue tincidunt cursus, urna justo ullamcorper dolor, vel facilisis massa dolor nec nulla. Proin ac venenatis erat. Quisque ullamcorper vel leo sed euismod. Mauris velit ante, imperdiet sed lorem in, lacinia fringilla metus.`});
+
+
+arr.push({name: "badge_bg_color", value: '#8d734a'});
+arr.push({name: "badge_text", value: '<b>Being a cardholder has brilliant benefits</b>'});
+arr.push({name: "badge_text_color", value: '#FFFFFF'});
+arr.push({name: "bg_color", value: '#000000'});
+arr.push({name: "card_small_img", value: 'logo_img_jared_20180626.png'});
+arr.push({name: "cta_text", value: '<b>SHOP NOW'});
+arr.push({name: "cta_text_bg_color", value: '#8d734a'});
+arr.push({name: "cta_text_color", value: '#FFFFFF'});
+arr.push({name: "details_text", value: '*Subject to credit approval. Minimum purchase required. <u>Click for details.</u>'});
+arr.push({name: "details_text_color", value: '#FFFFFF'});
+arr.push({name: "frame_bg_color", value: '#ffffff .0'});
+arr.push({name: "frame_img", value: 'frame_img.png'});
+arr.push({name: "frame_img_tint", value: '#8d734a'});
+arr.push({name: "headline_text", value: '<b>DARE TO ENJOY EVERYDAY SPECIAL FINANCING*'});
+arr.push({name: "headline_text_color", value: '#8d734a'});
+arr.push({name: "legal_close_button_color", value: '#FF0000'});
+arr.push({name: "legal_close_text_color", value: '#FF0000'});
+arr.push({name: "legal_text", value: '*Promotional financing available with the Jared The Galleria Of Jewelry Credit Card Accounts offered by Comenity Bank, or other lenders as applicable, which determines qualifications for credit and promotion eligibility. Minimum purchase and monthly payments are required. Subject to credit approval. Some merchandise exclusions may apply. See Store Associate for details. 20% down payment may be required and cannot be made with your Jared The Galleria Of Jewelry credit card. Plan availability, down payment and minimum purchase requirements may vary at Jared Vault stores by location or online.'});
+arr.push({name: "legal_text_bg_color", value: '#FFFFFF'});
+arr.push({name: "legal_text_bg_color_opacity", value: '.8'});
+arr.push({name: "legal_text_color", value: '#000000'});
+arr.push({name: "legal_text_font_size", value: '10'});
+arr.push({name: "lifestyle_img", value: 'lifestyle_Jared1_20190111.jpg'});
+arr.push({name: "line_color", value: '#8d734a'});
+arr.push({name: "logo_bg_color", value: '#ffffff .0'});
+arr.push({name: "logo_img", value: 'logo_jared_20181115.png'});
+arr.push({name: "logo_img_tint", value: '#FFFFFF'});
+arr.push({name: "overlay_color", value: '#ffffff .0'});
+arr.push({name: "replay_img", value: 'replay_img.png'});
+arr.push({name: "subhead_text", value: 'when you use your Jared the Galleria Of Jewelry Credit Card'});
+arr.push({name: "subhead_text_color", value: '#FFFFFF'});
+
+
+
+
+
+
+			/* END VARS */
+			var tmp = "";
+			for (var i = 0; i < arr.length; i++) {
+				tmp = tmp + arr[i].name + "=" + encodeURIComponent(arr[i].value).replace(/'/g, "%27").replace(/"/g, "%22");
+				if (i + 1 < arr.length) {
+					tmp = tmp + "&amp;"
+			}	
+			}
+			if (tmp !== "") {
+				tmp = "&amp;" + tmp;
+			}
+			return tmp;
+			})();
+    </script>
+</head>
+<body bgcolor="#FFFFFF" style="margin:0;padding:0">
+<div id="CNVR_call" style="">
+    <script src="https://s-usweb.dotomi.com/renderer/ogo.js" type="text/javascript"></script>
+    <script id="CNVR_script_call" type="text/javascript">
+        if (CNVR.id){
+            _$OGO$_.embed(
+                {
+                    "mediaWidth": CNVR.w,
+                    "mediaHeight": CNVR.h,
+                    "objectSrc": "crm_" + CNVR.w + "x" + CNVR.h + ".js"/* [INSERT_DEV_BYPASS_CACHE] */,
+                    "externalURL": "https://s-usweb.dotomi.com/renderer",
+                    "olickURL": ["http%3A%2F%2Fwww.dotomi.com%2F"],
+                    "eventURL": "http://usweb.dotomi.com/images/0/space.gif",
+                    "flashVars": "dtm_source=banner&amp;dtm_width=" + CNVR.w + "&amp;dtm_height=" + CNVR.h + CNVR.flashVars, 
+					'atomSuffix':'',
+					'spDebug': true,
+                    "viewNotify": "",
+                    "embedId": "CNVR",
+                    "device_id": "",
+                    "impNotify": "",
+                    "clickable": false,
+                    "menuURL": "",//http://usweb.dotomi.com/adinfo/adinfo_test.php?cid=2000&ms=" + ms + "&fpctok=&fpcdom=",
+                    "viewability_pixel": ""
+                }
+            );
+        } else {
+            (function(){
+                var sizes = ["160x600","180x150", "300x250", "300x600","300x1050", "320x50","320x100", "336x280", "468x60", "728x90","800x250","970x250"];
+                var wrapper = document.getElementById("CNVR_call");
+                wrapper.style.padding = "5px";
+                wrapper.style.fontFamily = "Arial";
+                for (var i=0; i<sizes.length; i++){
+                    var div = document.createElement("div");
+                    div.textContent = sizes[i];
+                    div.style.padding = "5px 0px";
+                    div.style.cursor = "pointer";
+                    wrapper.appendChild(div);
+                    div.addEventListener("click", (function(id) {
+                                return function(e){
+                                    window.location.href=window.location.href +"?id=" +id;
+                                }
+                            })(sizes[i])
+                    )
+                }
+            })();
+        }
+    </script>
+</div>
+</body>

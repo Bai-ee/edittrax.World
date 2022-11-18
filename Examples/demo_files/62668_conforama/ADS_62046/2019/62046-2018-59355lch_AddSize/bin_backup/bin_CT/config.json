@@ -1,0 +1,417 @@
+{
+  "rosettaVersion": "4.50",
+  "fofVersion": "4.0.2",
+  "companyId": 62046,
+  "subdirectory": "ADS_Global_HY_53562",
+  "borderZIndex": 809,
+  "platform": {
+    "direct": true,
+    "bolt": false,
+    "mojo": {
+      "richMedia": false,
+      "standardAnimatedBanner": false,
+      "cobalt": false
+    }
+  },
+  "vars": {
+    "fg_img": {
+      "defaultValue": "fg_img.png",
+      "required": false
+    },
+    "fg_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "style_img": {
+      "defaultValue": "style_img.png",
+      "required": false
+    },
+    "style_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "legal_text_color": {
+      "defaultValue": "white",
+      "required": false
+    },
+    "legal_text": {
+      "defaultValue": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "required": false
+    },
+    "legal_text_bg_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "logo_img": {
+      "defaultValue": "logo_img.png",
+      "required": true
+    },
+    "logo_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "headline_text_background_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "headline_text": {
+      "defaultValue": "<b>Earn up to 10% back in rewards*",
+      "required": true
+    },
+    "subhead_text_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "subhead_text_background_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "subhead_text": {
+      "defaultValue": "when you open a RUNWAYREWARDS Credit Card",
+      "required": false
+    },
+    "cta_text_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "cta_text_background_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "cta_text": {
+      "defaultValue": "<b>LEARN MORE",
+      "required": false
+    },
+    "details_text_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "details_text_background_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "details_text": {
+      "defaultValue": "*SUBJECT TO CREDIT APPROVAL. CLICK FOR DETAILS.",
+      "required": false
+    },
+    "badge_text_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "badge_text_background_color": {
+      "defaultValue": "",
+      "required": false
+    },
+    "badge_text": {
+      "defaultValue": "PLUS EARN UP TO 10% BACK IN REWARDS",
+      "required": false
+    },
+    "badge_bg_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "badge_bg_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    },
+    "card_small_img": {
+      "defaultValue": "card_small_img.png",
+      "required": false
+    },
+    "card_small_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "frame_img": {
+      "defaultValue": "frame_img.png",
+      "required": false
+    },
+    "frame_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "promo_style_img": {
+      "defaultValue": "promo_style_img.png",
+      "required": false
+    },
+    "promo_style_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "card_large_img": {
+      "defaultValue": "card_large_img.png",
+      "required": false
+    },
+    "card_large_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "lifestyle_img": {
+      "defaultValue": "lifestyle_img.jpg",
+      "required": false
+    },
+    "lifestyle_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "logo_bg_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "logo_bg_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    },
+    "frame_bg_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "frame_bg_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    },
+    "overlay_color": {
+      "defaultValue": "rgba(255,255,255,0.95)",
+      "required": false
+    },
+    "overlay_border": {
+      "defaultValue": "0px solid rgba(255,255,255,0.95)",
+      "required": false
+    },
+    "bg_img": {
+      "defaultValue": "bg_img.png",
+      "required": false
+    },
+    "bg_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "bg_color": {
+      "defaultValue": "#ffffff",
+      "required": false
+    },
+    "bg_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    },
+    "replay_img": {
+      "defaultValue": "replay_img.png",
+      "required": false
+    },
+    "replay_img_tint": {
+      "defaultValue": "",
+      "required": false
+    },
+    "line_color": {
+      "defaultValue": "#000000",
+      "required": false
+    },
+    "line_border": {
+      "defaultValue": "0px solid #ffffff",
+      "required": false
+    }
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "height": 480
+    },
+    {
+      "width": 300,
+      "height": 600
+    },
+    {
+      "width": 160,
+      "height": 600
+    },
+    {
+      "width": 300,
+      "height": 250
+    },
+    {
+      "width": 180,
+      "height": 150
+    },
+    {
+      "width": 728,
+      "height": 90
+    },
+    {
+      "width": 468,
+      "height": 60
+    },
+    {
+      "width": 320,
+      "height": 50
+    },
+    {
+      "width": 300,
+      "height": 1050
+    },
+    {
+      "width": 336,
+      "height": 280
+    },
+    {
+      "width": 320,
+      "height": 100
+    },
+    {
+      "width": 970,
+      "height": 250
+    },
+    {
+      "width": 800,
+      "height": 250
+    }
+  ],
+  "packs": {
+    "320x480": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "300x600": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "160x600": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "300x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "180x150": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "728x90": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "468x60": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "320x50": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "300x1050": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "336x280": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "320x100": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "970x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ],
+    "800x250": [
+      "core.pack",
+      "ad.pack",
+      "cnvr.advantage.pack",
+      "cnvr.usweb.pack",
+      "filters.pack",
+      "xmlpush.pack",
+      "tweenmax.pack",
+      "fontface.pack",
+      "alignmentgroup.pack"
+    ]
+  }
+}
