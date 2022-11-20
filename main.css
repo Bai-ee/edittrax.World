@@ -1,0 +1,152 @@
+/* 
+body {
+  background-color: #212121;
+  background-image:  url("ezgif-4-57266ccf6a.gif");
+  height: 100%;
+  overflow: visible; 
+} */
+
+body {
+  background-color: #212121;
+  /* background-image:url('ezgif-4-57266ccf6a.gif'); */
+  background-repeat:repeat;
+  height: 100%;
+  overflow: visible; 
+}
+
+
+@font-face {
+  font-family: mathias;
+  src: url(mathias-bold.ttf);
+}
+
+#stageBlock {
+  background-color:white;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99999;
+
+}
+
+#stageBlock3 {
+  background-color:#864042;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99998;
+
+}
+
+#stageBlock4 {
+  background-color: #8D713F;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99997;
+
+}
+
+#stageBlock4 {
+  background-color: #8D713F;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99996;
+
+}
+
+#stageBlock1 {
+  background-color:#E4E7DE;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99995;
+
+}
+
+#stageBlock2 {
+  background-color:#E4E7DE;
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index: 99994;
+
+}
+
+#adHit {
+  background-color:#E4E7DE;
+  position:absolute;
+  /* height:120%; */
+  width:100vw;
+  z-index: 9999;
+  opacity:0;
+  display:none;
+}
+
+#main_img {
+/* pointer-events:none; */
+
+}
+
+#clickThrough {
+  margin-left:00px;
+  height:70px;
+  width:70px; 
+}
+
+#clickThroughDiv {
+  width: 450px;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-align: center;
+  font-size:50px;
+  /* border: 1px solid white;
+  background-color: #864042; */
+  padding:0px;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding-top:0;
+  font-weight:bold;
+  font-family:mathias;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+@media only screen and (orientation:portrait){
+  #turn{ display:none; }
+  /* #container{ display:block; } */
+}
+
+
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    #mc_embed_signup { display: none; }
+    #main_img { display: none; }
+    #nav{ display:none; }
+    #turn{ display:block; }
+
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 756px) {
+    #clickThroughDiv {
+      display:none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #body {
+      background-color:yellow;
+    }
+  }
+
+
+
+
+  @media only screen and (orientation:portrait){
+  #turn{ display:block; }
+  /* #container{ display:block; } */
+}
