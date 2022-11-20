@@ -8,10 +8,19 @@ body {
 
 body {
   background-color: #212121;
-  /* background-image:url('ezgif-4-57266ccf6a.gif'); */
-  background-repeat:repeat;
-  height: 100%;
+  background-image:url('./assets/img/11_transparent.png');
+  background-repeat:no-repeat;
+  /* height: 100%; */
   overflow: visible; 
+  /* background-color:black; */
+
+  background-size: cover;
+  background-position: top;
+  height: auto;
+}
+
+#backgroundImage {
+  
 }
 
 
@@ -134,13 +143,13 @@ body {
 
   @media screen and (min-width: 767px) and (max-width: 756px) {
     #clickThroughDiv {
-      display:none;
+      /* display:none; */
     }
   }
 
   @media (max-width: 480px) {
     #body {
-      background-color:yellow;
+      /* background-color:yellow; */
     }
   }
 
