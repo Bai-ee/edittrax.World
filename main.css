@@ -25,9 +25,16 @@ body {
 
 
 @font-face {
+  font-family: monument;
+  src: url(MonumentExtended-Ultrabold.otf);
+}
+
+
+@font-face {
   font-family: mathias;
   src: url(mathias-bold.ttf);
 }
+
 
 #stageBlock {
   background-color:white;
@@ -106,7 +113,6 @@ body {
 
 #clickThroughDiv {
   width: 450px;
-  max-width: 75vw;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
@@ -121,9 +127,11 @@ body {
   font-weight:bold;
   font-family:mathias;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
-  width: 390px;
+  width: 100%;
+  margin:0px;
+  margin-bottom:20px;
 }
 
 
@@ -134,10 +142,14 @@ body {
 
 
   @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    #mc_embed_signup { display: none; }
+    /* #mc_embed_signup { display: none; }
     #main_img { display: none; }
     #nav{ display:none; }
-    #turn{ display:block; }
+    #turn{ display:block; } */
+
+    #ablob{
+      /* width:100px; */
+    }
 
   }
 
